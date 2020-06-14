@@ -44,6 +44,7 @@ pipeline {
                 label 'windows_machine'
             }
             steps {
+                git "https://github.com/devops-trainer/DevOpsClassCodes.git"
                 bat 'mvn package'
             }
         }
